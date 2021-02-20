@@ -342,11 +342,7 @@ body {
   transform: translateY(-4rem); }
 
 .main-nav {
-  list-style: none;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  margin-top: 2rem;
-  margin-right: 2rem; }
+  list-style: none; }
   .main-nav__item {
     display: inline-block;
     margin-left: 2rem;
@@ -500,31 +496,31 @@ ion-icon {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   position: relative;
-  color: #fff; }
-  .header__upper-part, .header__lower-part {
-    padding: .1rem; }
-  .header__logo-box {
-    float: left;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    content: ""; }
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem; }
+  .header__navigation {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20vh; }
+    .header__navigation--upper, .header__navigation--lower {
+      display: flex;
+      flex-direction: row; }
+    .header__navigation--upper {
+      justify-content: space-between; }
+    .header__navigation--lower {
+      justify-content: flex-end; }
+  .header__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .header__logo {
     height: 5.5rem; }
   .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: inline-block;
     text-align: center; }
-  .header__navigation {
-    float: right; }
-  .header__social {
-    float: right; }
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table; }
 
 .section-about,
 .section-popular-propositions,
