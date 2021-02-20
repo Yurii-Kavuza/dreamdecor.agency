@@ -1,0 +1,19 @@
+{
+  "name": "dreamdecor",
+  "version": "1.0.0",
+  "description": "Website for Dream Decor",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "author": "Yurii Kavuza",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "swiper": "^6.4.11"
+  }
+}
