@@ -1,0 +1,53 @@
+.ideas,
+.services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: $grid-width;
+    margin: auto;
+}
+
+.idea,
+.service {
+    display: flex;
+    height: auto;
+    width: 25%;
+    //min-width: 15%;
+    //flex: 1;
+    //flex-flow: column;
+    padding: 2rem;
+    //align-self: stretch;
+}
+
+.idea-box,
+.service-box {
+    display: inline-flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    flex-direction: column; 
+    
+    &:link,
+    &:visited {
+        background-color: rgba($color-white, .8);
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        transition: all .2s;        
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem);        
+    }
+
+    &:active {
+        transform: translateY(0);
+    }  
+    
+    &__img {
+        width: 100%;
+        height: auto;        
+    }
+}

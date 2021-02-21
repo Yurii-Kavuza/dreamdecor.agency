@@ -1,0 +1,29 @@
+.social-link{
+    text-decoration: none;
+    color: $color-grey-dark;    
+}
+
+ion-icon {
+    font-size: 3.2rem;
+    
+
+    &:link,
+    &:visited {
+        transition: all .3s;
+    }
+
+    &:hover,
+    &:active {
+        transform: rotate(5deg) scale(1.1);
+    }
+    
+    
+}
+
+.icon-grey {
+    color: $color-grey-dark;
+}
+.icon-white {
+    color: $color-white;
+    font-size: 4.8rem;
+}

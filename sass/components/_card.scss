@@ -1,0 +1,95 @@
+.card {
+    
+    //Functionality
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 55rem;
+
+    &__side {        
+    height: 55rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
+            transform: rotateY(-180deg);
+            
+        }
+    }   
+    
+
+    &:hover  &__side--front{
+        transform: rotateY(180deg);
+    }
+
+    &:hover  &__side--back{
+        transform: rotateY(0);
+    }
+
+
+    //Front side styling
+    &__picture {
+        background-size: cover;
+        height: 20rem;
+        /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);*/
+        
+
+        &--1 {
+            background-image: url(../img/propositions/DoItYourself.jpg);
+        }
+
+        &--2 {
+            background-image: url(../img/propositions/Minimum2.jpg);
+        }
+
+        &--3 {
+            background-image: url(../img/propositions/WhatIsNeeded.jpg);
+        }
+
+        &--4 {
+            background-image: url(../img/propositions/RelaxAndEnjoy.jpg);
+        }
+    }
+
+    &__details {
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-dark;
+                }
+            }
+        }
+    }
+
+    //Back side styling
+    &__back-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+   
+}

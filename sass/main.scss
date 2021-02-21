@@ -1,0 +1,23 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/card";
+@import "components/composition";
+@import "components/ideas-services";
+@import "components/form";
+@import "components/navigation";
+@import "components/sosial-icons";
+@import "components/swiper";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+
+@import "pages/home";
