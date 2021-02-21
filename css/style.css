@@ -88,8 +88,9 @@ body {
 .heading-tertiary {
   font-size: 2.2rem;
   font-weight: 700;
-  text-transform: uppercase; }
-  .heading-tertiary--idea {
+  text-transform: uppercase;
+  margin: auto; }
+  .heading-tertiary--idea, .heading-tertiary--service {
     font-size: 2rem;
     color: #000; }
   .heading-tertiary--proposition {
@@ -284,11 +285,31 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
-.idea-box {
-  display: inline-block;
+.ideas,
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 118rem;
+  margin: auto; }
+
+.idea,
+.service {
+  display: flex;
+  height: auto;
+  width: 25%;
+  padding: 2rem; }
+
+.idea-box,
+.service-box {
+  display: inline-flex;
   text-decoration: none;
-  text-transform: uppercase; }
-  .idea-box:link, .idea-box:visited {
+  text-transform: uppercase;
+  flex-direction: column; }
+  .idea-box:link, .idea-box:visited,
+  .service-box:link,
+  .service-box:visited {
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 1.5rem;
     padding: 1.5rem;
@@ -296,11 +317,14 @@ body {
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     transition: all .2s; }
-  .idea-box:hover {
+  .idea-box:hover,
+  .service-box:hover {
     transform: translateY(-1.5rem); }
-  .idea-box:active {
+  .idea-box:active,
+  .service-box:active {
     transform: translateY(0); }
-  .idea-box__img {
+  .idea-box__img,
+  .service-box__img {
     width: 100%;
     height: auto; }
 
@@ -366,26 +390,6 @@ body {
       border-bottom: 1px solid transparent;
       padding-left: .5rem;
       padding-top: .5rem; }
-
-.service-box {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase; }
-  .service-box:link, .service-box:visited {
-    background-color: rgba(255, 255, 255, 0.8);
-    font-size: 1.5rem;
-    padding: 1.5rem;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-    transition: all .2s; }
-  .service-box:hover {
-    transform: translateY(-1.5rem); }
-  .service-box:active {
-    transform: translateY(0); }
-  .service-box__img {
-    width: 100%;
-    height: auto; }
 
 .social-link {
   text-decoration: none;
