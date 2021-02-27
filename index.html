@@ -20,8 +20,9 @@
         <title>Dream Decor – це настрій Вашого свята!</title>
     </head>
     <body>
-        <header class="header">            
-            <div class="header__navigation">
+        <header class="header header--index">            
+            
+            <nav class="header__navigation">
                 <div class="header__navigation--upper">
                     <div class="header__logo-box">
                         <img src="img/logo-small-color.png" alt="логотип Dream Decor" class="header__logo">                
@@ -44,7 +45,7 @@
                         <a href="https://www.instagram.com/dream_decor_agency/" class="social__link"><ion-icon name="logo-instagram" class="icon-white"></ion-icon></a>
                     </div>
                 </div>                                                                     
-            </div>            
+            </nav>            
                         
             <div class="header__text-box">
                 <h1 class="heading-primary">
@@ -57,7 +58,26 @@
         </header>
 
         <main>
-            <section class="section-about">
+            <!--<div class="row">
+                <div class="js--sticky-navigation sticky-navigation hidden">
+                    <div class="sticky-navigation__logo-box">
+                        <img src="img/logo-small-color.png" alt="логотип Dream Decor" class="sticky-navigation__logo">                
+                    </div>
+                    <div class="sticky-navigation__menu">
+                        <ul class="main-nav">
+                            <li class="main-nav__item"><a href="#">Про нас</a></li>
+                            <li class="main-nav__item"><a href="#">Ідеї для свят</a></li>
+                            <li class="main-nav__item"><a href="#">Пропозиції</a></li>
+                            <li class="main-nav__item"><a href="#">Послуги</a></li>
+                            <li class="main-nav__item"><a href="#">Портфоліо</a></li>
+                            <li class="main-nav__item"><a href="#">Контакти</a></li>
+                            <li class="main-nav__item">Тел. +38(097) 499-71-39</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+
+            <section class="section-about js--section-about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary heading-secondary--green">
                     Dream Decor – це настрій Вашого свята!
@@ -186,7 +206,7 @@
                     <h2 class="heading-secondary heading-secondary--green">
                     Найпоширеніші пропозиції
                     </h2>
-                </div>
+                </div>               
 
                 <div class="row">
                     <div class="col-1-of-4">
@@ -221,7 +241,7 @@
                                 <div class="card__details">
                                     <ul>
                                         <li>Готове рішення для Вашого свята</li>
-                                        <li>Пропонуємо мінімальним пакет для чудового свята</li>
+                                        <li>Пропонуємо мінімальний пакет для чудового свята</li>
                                         <li>Бюджетний варіант полегшити клопоти перед святкуванням</li>
                                     </ul>
                                 </div>
@@ -242,7 +262,7 @@
                                 <h3 class="heading-tertiary heading-tertiary--proposition">Фотозона</br>"Те,що треба"</h3>
                                 <div class="card__details">
                                     <ul>
-                                        <li>Готове вирішення комфортного свята</li>
+                                        <li>Готове рішення комфортного свята</li>
                                         <li>Втілимо Вашу задумку і допоможемо у виборі стилю свята</li>
                                         <li>Всі задачі по організації, декору, доставці – беремо на себе</li>
                                     </ul>
@@ -282,7 +302,7 @@
                 <div class="u-center-text u-margin-top-big">
                     <a href="#" class="btn btn--green">Всі пропозиції</a>
                 </div>
-            </section>
+            </section>           
 
             <section class="section-services">
                 <div class="u-center-text u-margin-bottom-big">
@@ -358,8 +378,8 @@
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
                             <a href="#" class="swiper-element">
-                                <img src="img/who-we-are-1-min.jpg" alt="Оформлення побачень та дівич-вечорів" class="swiper-element__img">                            
-                                <h3 class="heading-tertiary heading-tertiary--idea">Оформлення побачень та дівич-вечорів</h3>
+                                <img src="img/who-we-are-1-min.jpg" alt="День Народження Арінки" class="swiper-element__img">                            
+                                <h3 class="heading-tertiary heading-tertiary--idea">День Народження Арінки</h3>
                             </a>
                           </div>
                           <div class="swiper-slide">
@@ -370,8 +390,8 @@
                           </div>
                           <div class="swiper-slide">
                             <a href="#" class="swiper-element">
-                                <img src="img/who-we-are-3-min.jpg" alt="Оформлення побачень та дівич-вечорів" class="swiper-element__img">                            
-                                <h3 class="heading-tertiary heading-tertiary--idea">Оформлення побачень та дівич-вечорів</h3>
+                                <img src="img/who-we-are-3-min.jpg" alt="День Народження Марка" class="swiper-element__img">                            
+                                <h3 class="heading-tertiary heading-tertiary--idea">День Народження Марка</h3>
                             </a>
                           </div>
                           <div class="swiper-slide">
@@ -386,33 +406,7 @@
                         <!-- Add Arrows -->
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
-                      </div>
-
-                        <!-- Swiper JS 
-                        <script src="../package/swiper-bundle.min.js"></script>-->
-
-                        <!-- Initialize Swiper -->
-                        <script>
-                            var swiper = new Swiper('.swiper-container', {
-                            slidesPerView: 2,
-                            spaceBetween: 4,
-                            slidesPerGroup: 2,
-                            loop: true,
-                            loopFillGroupWithBlank: true,
-                            autoplay: {
-                                delay: 3000,
-                                disableOnInteraction: false,
-                            },
-                            pagination: {
-                                el: '.swiper-pagination',
-                                clickable: true,
-                            },
-                            navigation: {
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',
-                            },
-                            });
-                        </script>
+                      </div>                        
                 </div>
             </section>
 
@@ -557,5 +551,9 @@
         </section>
         -->
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>        
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/script.js"></script>
+    </body>    
 </html>

@@ -130,6 +130,9 @@ body {
 .u-margin-top-big {
   margin-top: 8rem; }
 
+.hidden {
+  display: none; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -205,9 +208,9 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 55rem; }
+  height: 63rem; }
   .card__side {
-    height: 55rem;
+    height: 63rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -241,7 +244,7 @@ body {
       background-image: url(../img/propositions/RelaxAndEnjoy.jpg); }
   .card__details ul {
     list-style: none;
-    width: 80%;
+    width: 90%;
     margin: 0 auto; }
     .card__details ul li {
       text-align: center;
@@ -391,6 +394,66 @@ body {
       padding-left: .5rem;
       padding-top: .5rem; }
 
+/*.sticky-navigation {
+    
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: rgba($color-white, .98);
+    color: $color-grey-dark;
+    padding: .5rem 3rem .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    box-shadow: 0 2px 2px $color-grey-light-2;
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }    
+
+    &__logo {
+        height: 3.5rem;
+    }
+
+    &__text-box {
+        display: inline-block; 
+        text-align: center;
+    }
+    
+    & .main-nav {
+        list-style: none;
+    
+        &__item{
+            display: inline-block;
+            margin-left: 2rem;
+            color: $color-grey-dark;
+            font-size: 1.4rem;
+            letter-spacing: .1rem;        
+    
+            & a:link,
+            & a:visited {
+                color: $color-grey-dark;
+                padding:.5rem 0;
+                text-decoration: none;
+                text-transform: uppercase;            
+                border-bottom: 1px solid transparent;
+                transition: all .3s;        
+            }
+    
+            & a:hover,
+            & a:active {
+                color: $color-green;
+                border-bottom: 1px solid $color-green;
+            }                
+        }
+    }
+    
+}*/
 .social-link {
   text-decoration: none;
   color: #474747; }
@@ -495,7 +558,6 @@ ion-icon {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(29, 231, 195, 0.2), rgba(33, 184, 169, 0.2)), url(../img/_INL3230–copy.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -516,6 +578,43 @@ ion-icon {
       justify-content: space-between; }
     .header__navigation--lower {
       justify-content: flex-end; }
+    .header__navigation--sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.98);
+      color: #474747;
+      z-index: 200 !important;
+      box-shadow: 0 2px 2px #ebebeb; }
+      .header__navigation--sticky .header__navigation--upper {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 3rem 1rem; }
+        .header__navigation--sticky .header__navigation--upper .header__logo {
+          height: 3rem; }
+        .header__navigation--sticky .header__navigation--upper .header__menu .main-nav {
+          list-style: none; }
+          .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item {
+            display: inline-block;
+            margin-left: 2rem;
+            color: #474747;
+            font-size: 1.4rem;
+            letter-spacing: .1rem; }
+            .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:link,
+            .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:visited {
+              color: #474747;
+              padding: .5rem 0;
+              text-decoration: none;
+              text-transform: uppercase;
+              border-bottom: 1px solid transparent;
+              transition: all .3s; }
+            .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:hover,
+            .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:active {
+              color: #20d8ba;
+              border-bottom: 1px solid #20d8ba; }
+      .header__navigation--sticky .header__navigation--lower {
+        display: none; }
   .header__menu {
     display: flex;
     flex-direction: column;
@@ -526,12 +625,19 @@ ion-icon {
     display: inline-block;
     text-align: center; }
 
-.section-about,
+.header--index {
+  background-image: linear-gradient(to right bottom, rgba(29, 231, 195, 0.2), rgba(33, 184, 169, 0.2)), url(../img/_INL3230–copy.jpg); }
+
 .section-popular-propositions,
 .section-portfolio {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -10vh; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -25vh; }
 
 .section-ideas {
   padding: 20rem 0;

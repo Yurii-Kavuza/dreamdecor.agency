@@ -4,10 +4,12 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 55rem;
+    height: 63rem;
+    //display: flex;
+    //flex-direction: column;    
 
     &__side {        
-    height: 55rem;
+    height: 63rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -16,10 +18,11 @@
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);    
 
         &--front {
             background-color: $color-white;
+               
         }
 
         &--back {
@@ -64,13 +67,15 @@
         }
     }
 
-    &__details {
+    &__details {          
+
         ul {
             list-style: none;
-            width: 80%;
-            margin: 0 auto;
+            width: 90%;
+            margin: 0 auto;            
 
             li {
+                
                 text-align: center;
                 font-size: 1.5rem;
                 padding: 1rem;
@@ -90,6 +95,5 @@
         transform: translate(-50%, -50%);
         width: 90%;
         text-align: center;
-    }
-   
+    }   
 }

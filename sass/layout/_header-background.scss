@@ -1,0 +1,10 @@
+.header {
+    
+    &--index {
+        background-image: linear-gradient(
+        to right bottom,
+        rgba($color-green-light, 0.2),
+        rgba($color-green-dark, 0.2)),
+    url(../img/_INL3230–copy.jpg);
+    }
+}
