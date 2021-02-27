@@ -1,26 +1,16 @@
-.header {
-    height: 95vh;
-    
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+.header {  
+    z-index: 300;
     position: relative;
-    color: $color-white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;    
-    padding: 2rem;   
-    
+    padding: 1rem;
+
     &__navigation {
         display: flex;
         flex-direction: column;
-        margin-bottom: 20vh;
                
         &--upper,
         &--lower {
             display: flex;
-            flex-direction: row;
-            
+            flex-direction: row;            
         }
 
         &--upper {
@@ -38,12 +28,7 @@
             width: 100%;
             background-color: rgba($color-white, .98);
             color: $color-grey-dark;
-            //padding: 1rem 3rem 1rem;
-            //display: flex;
-            //flex-direction: row;
-            //justify-content: space-between;
-            //align-items: center;
-            z-index: 200 !important;
+            z-index: 200;
             box-shadow: 0 2px 2px $color-grey-light-2;
 
             & .header__navigation--upper {
@@ -98,12 +83,5 @@
 
     &__logo {
         height: 5.5rem;
-    }
-
-    &__text-box {
-        display: inline-block; 
-        text-align: center;
-    }  
-    
+    }    
 }
-

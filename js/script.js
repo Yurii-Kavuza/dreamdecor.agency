@@ -1,15 +1,11 @@
 $(document).ready(function(){
     
-    $('.js--section-about').waypoints(function(direction){
+    $('.js--section-about').waypoint(function(direction){
         if (direction == "down") {            
-            $('nav').addClass('.header__navigation--sticky');
-            //$('nav').removeClass('.header__navigation');
+            $('nav').addClass('header__navigation--sticky');
         }else {
-            $('nav').removeClass('.header__navigation--sticky');
-            //$('nav').addClass('.header__navigation');
+            $('nav').removeClass('header__navigation--sticky');
         }
-    },{
-        offset:'220px;'
     });
     
     /*var waypoints = $('#handler-first').waypoint(function(direction) {
