@@ -7,4 +7,14 @@ $(document).ready(function(){
           $('nav').removeClass('header__navigation--sticky');
       }
   });
+
+  $('.js--mobile-nav-icon').click(function(){
+        var nav = $('.js--header__menu');        
+
+        nav.slideToggle(200);
+        
+        
+        
+    });
+
 });

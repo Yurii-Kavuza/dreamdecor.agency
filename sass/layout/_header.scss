@@ -1,7 +1,11 @@
 .header {  
     z-index: 300;
-    position: relative;
-    padding: 1rem;
+    position: absolute;
+    padding: 3rem;
+    top:0;
+    left:0;
+    width: 100%;
+
 
     &__navigation {
         display: flex;
@@ -14,7 +18,7 @@
         }
 
         &--upper {
-            justify-content: space-between;
+            justify-content: space-between;            
         }
 
         &--lower {
@@ -39,6 +43,11 @@
                 & .header__logo {
                     height: 3rem;
                 }
+
+                & .icon-white {
+                    color: $color-grey-dark;
+                    font-size: 4rem;
+                }
                 
                 & .header__menu .main-nav {
                     list-style: none;
@@ -57,13 +66,22 @@
                             text-decoration: none;
                             text-transform: uppercase;            
                             border-bottom: 1px solid transparent;
-                            transition: all .3s;        
+                            transition: all .3s;
+                            
+                            @include respond(tab-land) {
+                                border-bottom: 0;
+                            }
                         }
                 
                         & a:hover,
                         & a:active {
                             color: $color-green;
                             border-bottom: 1px solid $color-green;
+
+                            @include respond(tab-land) {
+                                border-bottom: 0;
+                                color: $color-grey-dark;
+                            }
                         }                
                     }
                 }
@@ -79,9 +97,20 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @include respond(tab-port) {
+            display: none;
+            justify-content: flex-start;
+        }
     }    
 
     &__logo {
         height: 5.5rem;
-    }    
+    }
+    
+    &__social {
+        @include respond(tab-port) {
+            //display: none;
+        }
+    }
 }

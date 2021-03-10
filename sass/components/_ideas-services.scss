@@ -2,7 +2,7 @@
 .services {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
     max-width: $grid-width;
     margin: auto;
@@ -18,6 +18,14 @@
     //flex-flow: column;
     padding: 2rem;
     //align-self: stretch;
+
+    @include respond(tab-port) {
+        width: 38%;
+    }
+
+    @include respond(phone) {
+        width: 65%;
+    }
 }
 
 .idea-box,

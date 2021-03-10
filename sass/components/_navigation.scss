@@ -1,12 +1,38 @@
 .main-nav {
     list-style: none;
 
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+
+    }
+
     &__item{
         display: inline-block;
         margin-left: 2rem;
         color: $color-white;
         font-size: 1.6rem;
-        letter-spacing: .1rem;        
+        letter-spacing: .1rem;             
+
+        @include respond(tab-land) {
+            margin-left: 1.7rem;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 68.75em){
+            margin-left: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 60em){
+            margin-left: 1.2rem;
+            font-size: 1.4rem;
+        }
+
+        @include respond(tab-port) {
+            margin-left: 0;
+            font-size: 1.8rem;
+        }
 
         & a:link,
         & a:visited {
@@ -15,12 +41,20 @@
             text-decoration: none;
             text-transform: uppercase;            
             border-bottom: 1px solid transparent;
-            transition: all .3s;        
+            transition: all .3s;
+            
+            @include respond(tab-land) {
+                border-bottom: 0;
+            }
         }
 
         & a:hover,
         & a:active {
             border-bottom: 1px solid $color-white;
+            
+            @include respond(tab-land) {
+                border-bottom: 0;
+            }
         }
 
         &--social {
@@ -32,3 +66,13 @@
         }
     }
 }
+
+.mobile-nav {    
+    display: none;
+
+    @include respond(tab-port) {
+        display: block;
+    }
+}
+
+ 

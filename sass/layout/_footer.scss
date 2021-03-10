@@ -3,6 +3,10 @@
     padding: 4rem 0;
     font-size: 1.4rem;
 
+    @include respond(tab-port) {
+        padding: 3rem 0;
+    }
+
     &__logo-box {
         text-align: center;
     }
@@ -19,9 +23,20 @@
     &__item {
         display: block;
 
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         &--social {
             margin-top: 1rem;
-            display: inline-block;
+            display: flex;           
+            justify-content: flex-start;
+
+            @include respond(tab-port) {
+                justify-content: center;
+            }
         }
     }
 
@@ -45,5 +60,16 @@
 
     &__copyright {
         text-align: center;
+    }
+
+    &__col,
+    &__row {
+        @include respond(tab-port) {
+            margin-bottom: 3rem !important;
+        }
+
+        @include respond(tab-port) {
+            margin-bottom: 2rem !important;
+        }
     }
 }

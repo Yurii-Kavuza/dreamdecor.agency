@@ -1,0 +1,18 @@
+.call-me { 
+    
+    &__button {
+        text-decoration: none;
+        background-image: radial-gradient($color-green-light, $color-green-dark);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        height: 6rem;
+        width: 6rem;
+        position: fixed;
+        bottom: 3rem;
+        right: 4rem;
+        border-radius: 50%;
+        z-index: 2000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

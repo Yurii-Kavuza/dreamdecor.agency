@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     line-height: 1.7;
     color: $color-grey-dark;
-    padding: 2rem;
+    
 }
 
 .heading-primary {
@@ -16,7 +16,11 @@ body {
         display: block;
         font-size: 6rem;
         font-weight: 400;
-        animation: moveInLeft 1s ease-out; 
+        animation: moveInLeft 1s ease-out;
+        
+        @include respond(phone) {
+            font-size: 5rem;
+        }
     }
     
     &--sub {
@@ -25,6 +29,11 @@ body {
         font-weight: 400;
         letter-spacing: 1rem;
         animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+            font-size: 1.8rem;
+        }
     }
 }
 
@@ -34,6 +43,14 @@ body {
     font-weight: 700;
     display: inline-block;    
     letter-spacing: 2px;
+
+    @include respond(tab-port) {        
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 
     &--green {
         background-image: linear-gradient(to right, $color-green-light, $color-green-dark);
@@ -84,10 +101,24 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 1rem;
+
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .paragraph {
     font-size: $default-font-size;
+    
+    &__info {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+    }
     
     &:not(:last-child){
         margin-bottom: 3rem;
