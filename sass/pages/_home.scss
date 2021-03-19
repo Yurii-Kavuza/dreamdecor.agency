@@ -46,7 +46,7 @@
 
     @include respond(phone) {                    
         padding: 20rem 0;
-    };
+    }
 }
 
 .section-popular-propositions,
@@ -55,10 +55,18 @@
 }
 
 .section-about {    
-    margin-top: -15vh;
+    margin-top: -8vh;
     
     @include respond(tab-port) {                    
         padding-bottom: 20rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include respond(phone) {
+        margin-top: -12vh;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 

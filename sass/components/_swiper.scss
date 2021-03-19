@@ -1,11 +1,9 @@
 .swiper-container {
-    width: 95%;
-    height: 60vh;
-    padding: 0.5rem;
-
-    @include respond (tab-port) {
-      max-width: 90%;
+    display: flex;
   }
+
+  .swiper-wrapper{
+    display: flex;
   }
 
   .swiper-slide {
@@ -28,13 +26,28 @@
     align-items: center;
   }
 
-  .swiper-element {
-    display: inline-block;
+.swiper-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
     text-decoration: none;
     text-transform: uppercase;
+    height: auto;
     
     &__img {
-        width: 95%;
+        width: 90%;
         height: auto;
-    }
-  }
+    }    
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $color-green-dark !important;
+}
+
+.swiper-pagination-bullet-active{
+  color: $color-green-dark !important;
+  background-color: $color-green-dark !important;
+}
+  
