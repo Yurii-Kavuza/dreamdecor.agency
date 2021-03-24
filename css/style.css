@@ -200,6 +200,7 @@ body {
   padding: 1rem 3rem;
   display: inline-block;
   border-radius: 10rem;
+  border: none;
   transition: all .3s;
   position: relative;
   font-size: 2.2rem;
