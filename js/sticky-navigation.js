@@ -13,8 +13,6 @@ $(document).ready(function(){
 
     nav.slideToggle('normal',function(){
          if(this.style.display === 'none') { this.removeAttribute('style')} 
-        } );  
-    
+        } );    
     });
-
 });
