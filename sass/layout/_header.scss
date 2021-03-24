@@ -10,19 +10,87 @@
     &__navigation {
         display: flex;
         flex-direction: column;
+        padding-top: auto;           
+        padding-bottom: auto;
                
-        &--upper,
-        &--lower {
-            display: flex;
-            flex-direction: row;            
-        }
-
         &--upper {
-            justify-content: space-between;            
-        }
+            display: flex;            
+            flex-direction: row;
+            justify-content: space-between; 
+            padding-top: auto;           
+            padding-bottom: auto;           
+        } 
+        
+        &--secondary{
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            background-color: rgba($color-white, .98);
+            color: $color-grey-dark;
+            z-index: 200;
+            box-shadow: 0 2px 2px $color-grey-light-2;
 
-        &--lower {
-            justify-content: flex-end;
+            & .header__navigation--upper {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 3rem 1rem;
+
+                & .header__logo {
+                    height: 5.5rem;
+                }
+
+                & .icon-white {
+                    color: $color-grey-dark;                    
+                }
+                
+                & .header__menu .main-nav {
+                    list-style: none;                    
+                
+                    &__item{
+                        display: inline-block;
+                        vertical-align: middle;
+                        color: $color-grey-dark;        
+                
+                        & a:link,
+                        & a:visited {
+                            color: $color-grey-dark;
+                            //padding:.5rem 0;
+                            padding-top: auto;           
+                            padding-bottom: auto;
+                            text-decoration: none;
+                            text-transform: uppercase;            
+                            border-bottom: 1px solid transparent;
+                            transition: all .3s;
+                            
+                            @include respond(tab-land) {
+                                border-bottom: 0;
+                            }
+                        }
+
+                        & a.social__link:hover,
+                        & a.social__link:active {
+                            border-bottom: 1px solid transparent;
+                            padding: 0;
+                        }
+                
+                        & a:hover,
+                        & a:active {
+                            color: $color-green;
+                            border-bottom: 1px solid $color-green;
+
+                            @include respond(tab-land) {
+                                border-bottom: 0;
+                                color: $color-grey-dark;
+                            }
+                        }                
+                    }
+                }
+            }
+
+            & .header__navigation--lower {
+                display: none;
+            }        
         }
 
         &--sticky {
@@ -40,24 +108,25 @@
                 justify-content: space-between;
                 padding: 1rem 3rem 1rem;
 
+                & .header__logo-box {
+                    margin: auto 0;
+                }
+
                 & .header__logo {
                     height: 3rem;
                 }
 
                 & .icon-white {
                     color: $color-grey-dark;
-                    font-size: 4rem;
                 }
                 
                 & .header__menu .main-nav {
-                    list-style: none;
+                    list-style: none;                    
                 
                     &__item{
                         display: inline-block;
-                        margin-left: 2rem;
-                        color: $color-grey-dark;
-                        font-size: 1.4rem;
-                        letter-spacing: .1rem;        
+                        vertical-align: middle;
+                        color: $color-grey-dark;       
                 
                         & a:link,
                         & a:visited {
@@ -71,6 +140,12 @@
                             @include respond(tab-land) {
                                 border-bottom: 0;
                             }
+                        }
+
+                        & a.social__link:hover,
+                        & a.social__link:active {
+                            border-bottom: 1px solid transparent;
+                            padding: 0;
                         }
                 
                         & a:hover,

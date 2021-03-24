@@ -9,12 +9,12 @@ $(document).ready(function(){
   });
 
   $('.js--mobile-nav-icon').click(function(){
-        var nav = $('.js--header__menu');        
+    var nav = $('.js--header__menu');            
 
-        nav.slideToggle(200);
-        
-        
-        
+    nav.slideToggle('normal',function(){
+         if(this.style.display === 'none') { this.removeAttribute('style')} 
+        } );  
+    
     });
 
 });

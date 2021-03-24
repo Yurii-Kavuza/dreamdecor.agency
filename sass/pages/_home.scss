@@ -1,8 +1,8 @@
 .section-first {
-    height: 95vh;    
+    height: 65vh;    
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);    
+    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);    
     color: $color-white;
     display: flex;
     flex-direction: column;
@@ -14,11 +14,11 @@
     position: relative;
     
     @include respond(tab-land) {                    
-        clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 57vh, 0 100%);
     }
 
     @include respond(tab-port) {                    
-        clip-path: polygon(0 0, 100% 0, 100% 89vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 59vh, 0 100%);
     }
 
     &--index {
@@ -30,11 +30,27 @@
     }
 }
 
-.section-about,
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 12rem 0 20rem;
+
+    @include respond(tab-land) {                    
+        padding: 20rem 0;
+    }
+
+    @include respond(tab-port) {                    
+        padding: 17rem 0;
+    }   
+
+    @include respond(phone) {                    
+        padding: 20rem 0;
+    }
+}
+
 .section-popular-propositions,
 .section-portfolio {
     background-color: $color-grey-light-1;
-    padding: 25rem 0;
+    padding: 12rem 0;
 
     @include respond(tab-land) {                    
         padding: 20rem 0;
@@ -55,7 +71,7 @@
 }
 
 .section-about {    
-    margin-top: -8vh;
+    margin-top: -11vh;
     
     @include respond(tab-port) {                    
         padding-bottom: 20rem;
@@ -77,7 +93,7 @@
 
 .section-ideas,
 .section-services {
-    padding: 20rem 0;
+    padding: 12rem 0;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-green-light, 0.4),
@@ -101,8 +117,28 @@
     }
 }
 
+.template1{
+    padding: 12rem 0 8rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-green-light, 0.4),
+        rgba($color-green-dark, 0.4)),
+    url(../img/hearts.png);
+    background-size: cover;
+    color: $color-white;
+    //margin-top: -10rem;    
+
+    /*@include respond(tab-port) {                    
+        padding: 10rem 0;
+    }
+
+    @include respond(phone) {                    
+        padding: 6rem 0;
+    }*/
+}
+
 .section-book {
-    padding: 10rem 0;
+    padding: 20rem 0;
     background-image: url(../img/hearts.png);
     background-size: cover;
     display: flex;

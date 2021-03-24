@@ -30,13 +30,19 @@
                     </div>                                        
                     <div class="header__menu js--header__menu">
                         <ul class="main-nav js--main-nav">
-                            <li class="main-nav__item"><a href="html/info.html">Про нас</a></li>
-                            <li class="main-nav__item"><a href="html/info.html">Ідеї для свят</a></li>
-                            <li class="main-nav__item"><a href="html/info.html">Пропозиції</a></li>
-                            <li class="main-nav__item"><a href="html/info.html">Послуги</a></li>
-                            <li class="main-nav__item"><a href="html/info.html">Портфоліо</a></li>
-                            <li class="main-nav__item"><a href="html/info.html">Контакти</a></li>
-                            <li class="main-nav__item">Тел. +38(097) 499-71-39</li>
+                            <li class="main-nav__item"><a class="js--scroll-to-about-us" href="#">Про нас</a></li>
+                            <li class="main-nav__item"><a class="js--scroll-to-ideas" href="#">Ідеї для свят</a></li>
+                            <li class="main-nav__item"><a class="js--scroll-to-popular-propositions" href="#">Пропозиції</a></li>
+                            <li class="main-nav__item"><a class="js--scroll-to-services" href="#">Послуги</a></li>
+                            <li class="main-nav__item"><a class="js--scroll-to-portfolio" href="#">Портфоліо</a></li>
+                            <li class="main-nav__item"><a class="js--scroll-to-footer" href="#">Контакти</a></li>
+                            <li class="main-nav__item">+38(097) 499-71-39</li>
+                            <li class="main-nav__item">
+                                <div class="header__social">
+                                    <a href="https://www.facebook.com/dream_decor_agency-103276694698907" class="social__link"><ion-icon name="logo-facebook" class="icon-white"></ion-icon></a>
+                                    <a href="https://www.instagram.com/dream_decor_agency/" class="social__link"><ion-icon name="logo-instagram" class="icon-white"></ion-icon></a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="mobile-nav">
@@ -44,13 +50,7 @@
                             <ion-icon name="menu-outline" class="icon-mobile-nav icon-white"></ion-icon>
                         </a>
                     </div>                                                                                
-                </div>
-                <div class="header__navigation--lower">
-                    <div class="header__social">
-                        <a href="https://www.facebook.com/dream_decor_agency-103276694698907" class="social__link"><ion-icon name="logo-facebook" class="icon-white"></ion-icon></a>
-                        <a href="https://www.instagram.com/dream_decor_agency/" class="social__link"><ion-icon name="logo-instagram" class="icon-white"></ion-icon></a>
-                    </div>
-                </div>                                                                     
+                </div>                                                                                  
             </nav>             
         </header>
 
@@ -77,7 +77,7 @@
                             
                             У нас Ви можете замовити, як і окремий декор чи фотозону на свято, так і повну організацію Вашого свята – допомога у виборі локації,
                              фотозони, декор приміщення, аніматори, ведучі, розважальні щоу для дітей та різні майстер-класи.<br><br>
-                             Наша команда створює декор на наступні заходи:
+                             <!--Наша команда створює декор на наступні заходи:
                              <br>
                              <i class="icon-basic-heart icon-small"></i> дитячі дні народження;<br>                             
                              <i class="icon-basic-heart icon-small"></i> дорослі дні народження;<br>                             
@@ -85,10 +85,10 @@
                              <i class="icon-basic-heart icon-small"></i> гендер паті;<br>                             
                              <i class="icon-basic-heart icon-small"></i> дівич-вечір;<br>                             
                              <i class="icon-basic-heart icon-small"></i> романтичні побачення;<br>                             
-                             <i class="icon-basic-heart icon-small"></i> фотозона на корпоратив.<br>
+                             <i class="icon-basic-heart icon-small"></i> фотозона на корпоратив.<br>-->
                         </p>
 
-                        <a href="html/info.html" class="btn-text">Дізнатися більше &rarr;</a>
+                        
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
@@ -96,7 +96,10 @@
                             <img src="img/who-we-are-2-min.jpg" alt="Фото про нас 2" class="composition__photo composition__photo--p2">
                             <img src="img/who-we-are-1-min.jpg" alt="Фото про нас 3" class="composition__photo composition__photo--p3">
                         </div>
-                    </div>
+                    </div>                    
+                </div>
+                <div class="u-center-text">
+                    <a href="html/info.html" class="btn btn--green">Дізнатися більше</a>
                 </div>                
             </section>
 
@@ -187,7 +190,7 @@
                 </div>
             </section>
 
-            <section class="section-popular-propositions">
+            <section class="section-popular-propositions js--section-popular-propositions">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary heading-secondary--green">
                     Найпоширеніші пропозиції
@@ -290,7 +293,7 @@
                 </div>
             </section>           
 
-            <section class="section-services">
+            <section class="section-services js--section-services">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary heading-secondary--white">
                     Послуги
@@ -353,13 +356,13 @@
                 </div>
             </section>
 
-            <section class="section-portfolio">
+            <section class="section-portfolio js--section-portfolio">
                 <div class="u-center-text u-margin-bottom-medium">
                     <h2 class="heading-secondary">
                     Портфоліо
                     </h2>
                 </div>
-                <div class="swiper-container">
+                <div class="swiper-container swiper-fix">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <a href="html/info.html" class="swiper-element">
@@ -384,7 +387,7 @@
                             <img src="img/winter-fairytale-min.jpg" alt="Зимова казка" class="swiper-element__img">                            
                             <h3 class="heading-tertiary heading-tertiary--idea swiper-element__heading">Зимова казка</h3>
                         </a>
-                      </div>                          
+                      </div>                                               
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
@@ -395,7 +398,8 @@
             </section>
 
             <!--Form for callback-->
-            <!--<div class="call-me">
+            <!--
+            <div class="call-me">
                 <a href="#" class="call-me__button js--scroll-to-book"><ion-icon name="call-outline" class="icon--call"></ion-icon></a>                
             </div>
 
@@ -424,10 +428,10 @@
                     </div>
                 </div>
             </section>
-        -->
+            -->
         </main>
 
-        <footer class="footer">
+        <footer class="footer js--footer">
             <div class="row footer__row">
                 <div class="col-1-of-3 footer__col">
                     <div class="footer__logo-box">
