@@ -7,7 +7,8 @@
     width: 100%;
 
 
-    &__navigation {
+    &__navigation,
+    &__navigation--other {
         display: flex;
         flex-direction: column;
         padding-top: auto;           

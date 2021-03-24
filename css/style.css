@@ -776,18 +776,18 @@ ion-icon {
   top: 0;
   left: 0;
   width: 100%; }
-  .header__navigation {
+  .header__navigation, .header__navigation--other {
     display: flex;
     flex-direction: column;
     padding-top: auto;
     padding-bottom: auto; }
-    .header__navigation--upper {
+    .header__navigation--upper, .header__navigation--other--upper {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       padding-top: auto;
       padding-bottom: auto; }
-    .header__navigation--secondary {
+    .header__navigation--secondary, .header__navigation--other--secondary {
       position: fixed;
       top: 0;
       left: 0;
@@ -796,22 +796,23 @@ ion-icon {
       color: #474747;
       z-index: 200;
       box-shadow: 0 2px 2px #ebebeb; }
-      .header__navigation--secondary .header__navigation--upper {
+      .header__navigation--secondary .header__navigation--upper, .header__navigation--other--secondary .header__navigation--upper {
         display: flex;
         justify-content: space-between;
         padding: 1rem 3rem 1rem; }
-        .header__navigation--secondary .header__navigation--upper .header__logo {
+        .header__navigation--secondary .header__navigation--upper .header__logo, .header__navigation--other--secondary .header__navigation--upper .header__logo {
           height: 5.5rem; }
-        .header__navigation--secondary .header__navigation--upper .icon-white {
+        .header__navigation--secondary .header__navigation--upper .icon-white, .header__navigation--other--secondary .header__navigation--upper .icon-white {
           color: #474747; }
-        .header__navigation--secondary .header__navigation--upper .header__menu .main-nav {
+        .header__navigation--secondary .header__navigation--upper .header__menu .main-nav, .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav {
           list-style: none; }
-          .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item {
+          .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item, .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav__item {
             display: inline-block;
             vertical-align: middle;
             color: #474747; }
             .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:link,
-            .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:visited {
+            .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:visited, .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav__item a:link,
+            .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav__item a:visited {
               color: #474747;
               padding-top: auto;
               padding-bottom: auto;
@@ -821,24 +822,28 @@ ion-icon {
               transition: all .3s; }
               @media (max-width: 75em) {
                 .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:link,
-                .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:visited {
+                .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:visited, .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav__item a:link,
+                .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav__item a:visited {
                   border-bottom: 0; } }
             .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a.social__link:hover,
-            .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a.social__link:active {
+            .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a.social__link:active, .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav__item a.social__link:hover,
+            .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav__item a.social__link:active {
               border-bottom: 1px solid transparent;
               padding: 0; }
             .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:hover,
-            .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:active {
+            .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:active, .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav__item a:hover,
+            .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav__item a:active {
               color: #2cfcd9;
               border-bottom: 1px solid #2cfcd9; }
               @media (max-width: 75em) {
                 .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:hover,
-                .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:active {
+                .header__navigation--secondary .header__navigation--upper .header__menu .main-nav__item a:active, .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav__item a:hover,
+                .header__navigation--other--secondary .header__navigation--upper .header__menu .main-nav__item a:active {
                   border-bottom: 0;
                   color: #474747; } }
-      .header__navigation--secondary .header__navigation--lower {
+      .header__navigation--secondary .header__navigation--lower, .header__navigation--other--secondary .header__navigation--lower {
         display: none; }
-    .header__navigation--sticky {
+    .header__navigation--sticky, .header__navigation--other--sticky {
       position: fixed;
       top: 0;
       left: 0;
@@ -847,24 +852,25 @@ ion-icon {
       color: #474747;
       z-index: 200;
       box-shadow: 0 2px 2px #ebebeb; }
-      .header__navigation--sticky .header__navigation--upper {
+      .header__navigation--sticky .header__navigation--upper, .header__navigation--other--sticky .header__navigation--upper {
         display: flex;
         justify-content: space-between;
         padding: 1rem 3rem 1rem; }
-        .header__navigation--sticky .header__navigation--upper .header__logo-box {
+        .header__navigation--sticky .header__navigation--upper .header__logo-box, .header__navigation--other--sticky .header__navigation--upper .header__logo-box {
           margin: auto 0; }
-        .header__navigation--sticky .header__navigation--upper .header__logo {
+        .header__navigation--sticky .header__navigation--upper .header__logo, .header__navigation--other--sticky .header__navigation--upper .header__logo {
           height: 3rem; }
-        .header__navigation--sticky .header__navigation--upper .icon-white {
+        .header__navigation--sticky .header__navigation--upper .icon-white, .header__navigation--other--sticky .header__navigation--upper .icon-white {
           color: #474747; }
-        .header__navigation--sticky .header__navigation--upper .header__menu .main-nav {
+        .header__navigation--sticky .header__navigation--upper .header__menu .main-nav, .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav {
           list-style: none; }
-          .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item {
+          .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item, .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav__item {
             display: inline-block;
             vertical-align: middle;
             color: #474747; }
             .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:link,
-            .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:visited {
+            .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:visited, .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav__item a:link,
+            .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav__item a:visited {
               color: #474747;
               padding: .5rem 0;
               text-decoration: none;
@@ -873,22 +879,26 @@ ion-icon {
               transition: all .3s; }
               @media (max-width: 75em) {
                 .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:link,
-                .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:visited {
+                .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:visited, .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav__item a:link,
+                .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav__item a:visited {
                   border-bottom: 0; } }
             .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a.social__link:hover,
-            .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a.social__link:active {
+            .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a.social__link:active, .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav__item a.social__link:hover,
+            .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav__item a.social__link:active {
               border-bottom: 1px solid transparent;
               padding: 0; }
             .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:hover,
-            .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:active {
+            .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:active, .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav__item a:hover,
+            .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav__item a:active {
               color: #2cfcd9;
               border-bottom: 1px solid #2cfcd9; }
               @media (max-width: 75em) {
                 .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:hover,
-                .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:active {
+                .header__navigation--sticky .header__navigation--upper .header__menu .main-nav__item a:active, .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav__item a:hover,
+                .header__navigation--other--sticky .header__navigation--upper .header__menu .main-nav__item a:active {
                   border-bottom: 0;
                   color: #474747; } }
-      .header__navigation--sticky .header__navigation--lower {
+      .header__navigation--sticky .header__navigation--lower, .header__navigation--other--sticky .header__navigation--lower {
         display: none; }
   .header__menu {
     display: flex;
