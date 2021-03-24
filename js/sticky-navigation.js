@@ -12,8 +12,11 @@ $(document).ready(function(){
     var nav = $('.js--header__menu');            
 
     nav.slideToggle('normal',function(){
-         if(this.style.display === 'none') { this.removeAttribute('style')} 
-        } );  
+        $('.header__navigation').addClass('header__navigation--sticky');
+         if(this.style.display === 'none') { 
+            $('.header__navigation').removeClass('header__navigation--sticky'); 
+            this.removeAttribute('style')} 
+        } );
     
     });
 
