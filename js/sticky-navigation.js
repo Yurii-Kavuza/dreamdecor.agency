@@ -9,6 +9,7 @@ $(document).ready(function(){
   });
 
   $('.js--mobile-nav-icon').click(function(){
+    
     var nav = $('.js--header__menu');            
 
     nav.slideToggle('normal',function(){
@@ -17,6 +18,6 @@ $(document).ready(function(){
          if(this.style.display === 'none') { 
             $('.header__navigation').removeClass('header__navigation--secondary'); 
             this.removeAttribute('style')} 
-        } );
+        });
     });
 });

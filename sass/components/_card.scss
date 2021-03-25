@@ -80,27 +80,46 @@
         &--4 {
             background-image: url(../img/propositions/RelaxAndEnjoy.jpg);
         }
-    }
+    }    
 
-    &__details {          
+    &__list {
+        list-style: none;
+        width: 90%;
+        margin: 0 auto;
+        
+        &__item {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: flex-start;
+            font-size: 1.5rem;
+            margin-top: .5rem;
+            
+            &--included{
+                color:$color-grey-dark3;
+            }
 
-        ul {
-            list-style: none;
-            width: 90%;
-            margin: 0 auto;            
-
-            li {
-                
-                text-align: center;
-                font-size: 1.5rem;
-                padding: 1rem;
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-dark;
-                }
+            &--excluded{
+                color:$color-grey-light-3;
             }
         }
+
+        &__icon {
+            padding-top: .5rem;
+        }
+
+        &__text {
+            text-align: left;
+            padding-left: 1rem;
+        }
+             
     }
+
+    .list__icon {
+        font-size: 2.4rem;
+    }
+
+
 
     //Back side styling
     &__back-info {
@@ -109,7 +128,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 90%;
-        text-align: center;    
+        text-align: center;
+        
+        & .btn {
+            font-size: 1.5rem;
+        }
     }   
 
     @include respond(tab-port){        

@@ -128,3 +128,14 @@ body {
 .icon-small {
     font-size: $default-icon-size;
 }
+
+.sub-title{
+    font-weight: 400;
+    text-transform: lowercase;
+
+
+
+    &--grey{
+        color: $color-grey-light-4;
+    }
+}
