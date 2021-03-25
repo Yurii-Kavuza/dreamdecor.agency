@@ -33,63 +33,35 @@
 .section-about {
     background-color: $color-grey-light-1;
     padding: 12rem 0 20rem;
+    margin-top: -11vh;
 
     @include respond(tab-land) {                    
-        padding: 20rem 0;
+        padding: 11rem 1rem 20rem;
     }
 
     @include respond(tab-port) {                    
-        padding: 17rem 0;
+        padding: 11rem 1rem 15rem;        
     }   
 
     @include respond(phone) {                    
-        padding: 20rem 0;
+        padding: 11rem 1rem 15rem;
     }
 }
 
 .section-popular-propositions,
 .section-portfolio {
     background-color: $color-grey-light-1;
-    padding: 12rem 0;
+    padding: 15rem 0;
+    margin-top: -10vh;
 
     @include respond(tab-land) {                    
-        padding: 20rem 0;
-    }
-
-    @include respond(tab-port) {                    
-        padding: 17rem 0;
-    }   
+        padding: 15rem 0;
+    }     
 
     @include respond(phone) {                    
-        padding: 20rem 0;
+        padding: 13rem 2rem 15rem;                
     }
 }
-
-.section-popular-propositions,
-.section-portfolio {  
-    margin-top: -10vh;
-}
-
-.section-about {    
-    margin-top: -11vh;
-    
-    @include respond(tab-port) {                    
-        padding-bottom: 20rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    @include respond(phone) {
-        margin-top: -12vh;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
-
-.section-popular-propositions{  
-    padding-bottom: 15rem;
-}
-
 
 .section-ideas,
 .section-services {
